@@ -1,0 +1,39 @@
+
+// Primary colors
+
+$moderate-violet: hsl(263, 55%, 52%);
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$very-dark-blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+$dim-white: hsl(0, 0%, 70%);
+$very-dim-white: hsl(0, 0%, 50%);
+
+// Neutral colors
+
+$light-gray: hsl(0, 0%, 81%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+
+@mixin main__layout($color, $bcolor) {
+    border-radius: 10px;
+    padding: 1.5rem;
+    color: $color;
+    background-color: $bcolor;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    align-items: start;
+    grid-gap: 1rem;
+}
+
+@mixin profile_layout {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-gap: 1rem;
+    justify-content: start;
+}
+
+@mixin img__layout($col) {
+    border-radius: 50%;
+    border: 1px solid $col;
+    height: 2.5rem;
+}

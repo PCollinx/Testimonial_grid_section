@@ -1,0 +1,14 @@
+{
+  "name": "testimonials_grid_section",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/_main.scss css/style.css -w"
+  },
+  "author": "Collins",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}

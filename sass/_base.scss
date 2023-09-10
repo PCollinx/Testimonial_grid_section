@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 81.25%; 
+
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: $light-grayish-blue;
+    font-weight: 500;
+}
+
+.daniel {
+    @include main__layout($white, $moderate-violet);
+
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+    position: relative;
+    z-index: 100;
+
+    &__profile {
+        @include profile_layout;
+    }
+
+    &__img {
+        @include img__layout($dim-white)
+
+    }
+
+    &__stat {
+        color: $very-dim-white;
+    }
+    &__intro {
+        margin-bottom: .5rem;
+    }
+    &__text {
+        color: $dim-white;
+    }
+}
+
+.jonathan {
+    @include main__layout($white, $very-dark-grayish-blue);
+
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+
+    &__profile {
+        @include profile_layout;
+    }
+    &__img {
+        @include img__layout($dim-white)
+
+    }
+    &__stat {
+        color: $very-dim-white;
+    }
+    &__intro {
+        margin-bottom: .5rem;
+    }
+    &__text {
+        color: $dim-white;
+    }
+}
+
+.jaenette {
+    @include main__layout(none, $white);
+
+    grid-column: 1 /2;
+    grid-row: 2 / 3;
+
+    &__profile {
+        @include profile_layout;
+    }
+
+    &__img {
+        @include img__layout($dim-white)
+
+    }
+
+    &__stat {
+        color: $very-dim-white;
+    }
+    &__intro {
+        margin-bottom: .5rem;
+    }
+    &__text {
+        color: $dim-white;
+    }
+
+}
+
+
+.patrick {
+    @include main__layout($white, $very-dark-blackish-blue);
+
+    grid-column: 2 / span 2;
+    grid-row: 2 / 3;
+
+    &__profile {
+        @include profile_layout;
+    }
+    &__img {
+        @include img__layout($moderate-violet)
+
+    }
+    &__stat {
+        color: $very-dim-white;
+    }
+    &__intro {
+        margin-bottom: .5rem;
+    }
+    &__text {
+        color: $dim-white;
+    }
+
+}
+
+.kira {
+    @include main__layout(none, $white);
+
+    grid-column: 4 / 5;
+    grid-row: 1 / span 2;
+
+    &__profile {
+        @include profile_layout;
+    }
+
+    &__img {
+        @include img__layout($dim-white)
+
+    }
+    &__stat {
+        color: $very-dim-white;
+    }
+    &__intro {
+        margin-bottom: .5rem;
+    }
+    &__text {
+        color: $dim-white;
+    }
+}
+
+.quote {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    width: 90px;
+    z-index: -1;
+
+    @media only screen and (max-width: 1200px) {
+        left: 60%;
+    }
+    @media only screen and (max-width: 750px) {
+        left: 40vw;
+    }
+
+    @media only screen and (max-width: 550px) {
+        height: 80px;
+        width: 70px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        left: 37vw;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
