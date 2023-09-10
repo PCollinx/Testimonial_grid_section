@@ -75,6 +75,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   grid-gap: 1rem;
+  align-items: center;
   justify-content: start;
 }
 .daniel__img {
@@ -108,6 +109,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   grid-gap: 1rem;
+  align-items: center;
   justify-content: start;
 }
 .jonathan__img {
@@ -141,6 +143,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   grid-gap: 1rem;
+  align-items: center;
   justify-content: start;
 }
 .jaenette__img {
@@ -174,6 +177,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   grid-gap: 1rem;
+  align-items: center;
   justify-content: start;
 }
 .patrick__img {
@@ -207,6 +211,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   grid-gap: 1rem;
+  align-items: center;
   justify-content: start;
 }
 .kira__img {

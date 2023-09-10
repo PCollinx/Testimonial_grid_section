@@ -25,10 +25,11 @@ $light-grayish-blue: hsl(210, 46%, 95%);
     grid-gap: 1rem;
 }
 
-@mixin profile_layout {
+@mixin profile__layout {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     grid-gap: 1rem;
+    align-items: center;
     justify-content: start;
 }
 
